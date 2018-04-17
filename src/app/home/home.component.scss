@@ -1,5 +1,45 @@
 $danger-color: #EB5757;
 
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (max-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (max-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
 .main {
     height: 450px;
     position: relative;
@@ -10,6 +50,13 @@ $danger-color: #EB5757;
 
         h2 {
             font-size: 52px;
+            transition: all 0.5s;
+            @include md {
+                font-size: 45px;
+            }
+            @include sm {
+                font-size: 38px;
+            }
         }
 
         button {
@@ -31,6 +78,10 @@ $danger-color: #EB5757;
             height: 100%;
             width: 100%;
             margin: 0;
+
+            @include md {
+                display: none;
+            }
             
             .row {
                 height: 33%;
@@ -41,9 +92,9 @@ $danger-color: #EB5757;
                 .storeBtn {
                     height: 90%;
                     background: $danger-color;
+                    padding: 47px;
                 }
             }
         }
     }
 }
-
