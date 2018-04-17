@@ -3,6 +3,8 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { RouterModule, Routes, Router } from '@angular/router';
 
+import {SeoService} from '../../seo_service'
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -44,10 +46,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
     ),
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'vogueAfriq'}),
     MDBBootstrapModule.forRoot(),
   ],
-  providers: [],
+  providers: [ SeoService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
