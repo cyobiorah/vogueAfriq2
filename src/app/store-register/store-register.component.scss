@@ -28,22 +28,26 @@
                 margin-left: 0;
             }
 
-            // .col-6 {
-            //     width: 95%;
-            //     outline: 2px solid
-            // }
+            .md-form {
+                margin-bottom: 0;
+            }
 
             input {
                 background: #FFF;
                 border-bottom: none;
-                margin: 0;
+                margin: 1px;
                 margin-bottom: 2px;
                 padding-left: 25px;
                 width: 95%;
             }
 
+            .col-6 {
+                max-width: 48.55%;
+            }
+
             input::placeholder {
-                color: #000;
+                color: #4F4F4F;
+                font-weight: 300;
             }
 
             button {
@@ -54,7 +58,7 @@
                 color: #FFF;
                 font-weight: bold;
                 width: 100%;
-                margin: 75px 0;
+                // margin: 75px 0;
             }
         }
     }

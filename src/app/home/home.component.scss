@@ -74,26 +74,25 @@ $screen-xl-min: 1200px;
         opacity: .4;
         position: absolute;
 
-        .rowContainer {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-
+        .row.center {
+            height: 33%;
+            text-align: center;
+            color: #FFF;
+            font-weight: bold;
             @include md {
                 display: none;
             }
-            
-            .row {
-                height: 33%;
-                text-align: center;
-                color: #FFF;
-                font-weight: bold;
 
-                .storeBtn {
-                    height: 90%;
-                    background: $danger-color;
-                    padding: 47px;
-                }
+            .storeBtn {
+                // height: 90%;
+                background: $danger-color;
+                padding: 50px;
+                font-size: 15px;
+                letter-spacing: 1.5px;
+            }
+
+            .col-6 {
+                padding-top: 10px;
             }
         }
     }
