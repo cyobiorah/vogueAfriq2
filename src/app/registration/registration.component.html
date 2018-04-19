@@ -8,10 +8,18 @@
         <div class="col-12 col-md-6">
           <form action="#">
             <h3>LOGIN</h3>
-            <input type="email" placeholder="Email Address" class="form-control">
-            <input type="password" placeholder="Password" class="form-control">
-            <a href="#" class="text-right">Forgot password?</a>
-            <button>Log In</button>
+            <div class="row no-gutters">
+              <div class="col-12 md-form">
+                <input type="email" placeholder="Email Address" class="form-control">
+              </div>
+              <div class="col-12 md-form">
+                <input type="password" placeholder="Password" class="form-control">
+              </div>
+            </div>
+            <a href="#" class="text-right" style="margin-right: 15px;">Forgot your password?</a>
+            <div class="row no-gutters" style="margin-right: 15px">
+              <button>Log In</button>
+            </div>
             <a href="#">Don't have an accout?</a>
           </form>
         </div>
@@ -19,23 +27,41 @@
         <div class="col-12 col-md-6">
           <form action="#">
             <h3>SIGN UP</h3>
-            <input type="text" placeholder="First Name" class="form-control col-12 col-lg-6" style="width: 45%; display: inline;">
-            <input type="text" placeholder="Last Name" class="form-control col-12 col-lg-6" style="width: 45%; display: inline;">
-            <input type="email" placeholder="Email Address" class="form-control">
-            <input type="text" placeholder="Address 1" class="form-control">
-            <input type="text" placeholder="Address 2" class="form-control">
-            <select name="gender" id="">
-              <option>Gender</option>
-              <option>Male</option>
-              <option>Female</option>
-            </select>
-            <select name="country">
-              <option>Country</option>
-              <option>Nigeria</option>
-              <option>Brazil</option>
-              <option>Spain</option>
-            </select>
-            <button>Register</button>
+            <div class="row no-gutters">
+              <div class="col-6 md-form">
+                <input type="text" placeholder="First Name" class="form-control">
+              </div>
+              <div class="col-6 md-form">
+                <input type="text" placeholder="Last Name" class="form-control">
+              </div>
+              <div class="col-12 md-form">
+                <input type="email" placeholder="Email Address" class="form-control">
+              </div>
+              <div class="col-12 md-form">
+                <input type="text" placeholder="Address 1" class="form-control">
+              </div>
+              <div class="col-12 md-form">
+                <input type="text" placeholder="Address 2" class="form-control">
+              </div>
+              <div class="col-12 md-form">
+                <select name="gender">
+                  <option>Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+              <div class="col-12 md-form">
+                <select name="country">
+                  <option>Country</option>
+                  <option>Nigeria</option>
+                  <option>Brazil</option>
+                  <option>Spain</option>
+                </select>
+              </div>
+            </div>
+            <div class="row no-gutters" style="margin-right: 15px">
+              <button>Log In</button>
+            </div>
             <a href="#">Have an account?</a>
           </form>
         </div>

@@ -15,8 +15,7 @@
 
     .form-body {
         background: #E0E0E0;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 50px 0 150px;
 
         h3 {
             font-size: 18px;
@@ -26,18 +25,38 @@
         }
 
         form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 30px 0;
+
+            .row {
+                // margin-bottom: 50px;
+                margin-right: 25px;
+                margin-left: 0;
+            }
+
+            .md-form {
+                margin-bottom: 0;
+            }
 
             input {
                 background: #FFF;
                 border-bottom: none;
-                margin: 0;
+                margin: 1px;
                 margin-bottom: 2px;
                 padding-left: 25px;
                 width: 95%;
+                color: #4F4F4F;
+                font-weight: 400;
             }
 
             input::placeholder {
-                color: #000;
+                color: #4F4F4F;
+                font-weight: 300;
+            }
+
+            .col-6 {
+                max-width: 48.55%;
             }
 
             select {
@@ -45,8 +64,10 @@
                 background: #FFF;
                 border: none;
                 padding: 14px 22px;
-                margin-bottom: 2px;
+                margin: 1px -3px 2px 1px;
                 outline: none;
+                color: #4F4F4F;
+                font-weight: 300
             }
 
             a {
@@ -64,7 +85,7 @@
                 color: #FFF;
                 font-weight: bold;
                 width: 100%;
-                margin: 75px 0;
+                margin-top: 50px;
             }
         }
     }

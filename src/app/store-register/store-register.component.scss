@@ -15,7 +15,7 @@
 
     .form-body {
         background: #E0E0E0;
-        padding-top: 50px;
+        padding: 50px 0 100px;
 
         form {
             max-width: 400px;
@@ -39,15 +39,25 @@
                 margin-bottom: 2px;
                 padding-left: 25px;
                 width: 95%;
+                color: #4F4F4F;
+                font-weight: 400;
+            }
+
+            
+            input::placeholder {
+                color: #4F4F4F;
+                font-weight: 300;
+            }
+            
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                -moz-appearance: textfield;
+                margin: 0; 
             }
 
             .col-6 {
                 max-width: 48.55%;
-            }
-
-            input::placeholder {
-                color: #4F4F4F;
-                font-weight: 300;
             }
 
             button {
@@ -58,7 +68,6 @@
                 color: #FFF;
                 font-weight: bold;
                 width: 100%;
-                // margin: 75px 0;
             }
         }
     }
